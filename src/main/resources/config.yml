@@ -1,0 +1,32 @@
+# Set this to true if you want more verbose output to the console.
+debug: false
+
+# Choose if you want to enable broadcasting whenever a player votes
+broadcast-votes: true
+
+# String to insert before messages sent out with this plugin
+prefix: '&b[&cVoteRewards&6Plus&b]&7'
+
+# What to give people whenever they vote
+# Sorted by permissions(ex. vrp.admin)
+rewards:
+  # You must have a default group
+  default:
+    # You MUST have a priority in each group,
+    # if a player has multiple groups somehow ones with lower priorities will take priority
+    priority: 99999
+    # Amount of money to give the player
+    money: 500
+    # How many exp levels to give a player
+    exp: 2
+    # List of items to give a player
+    commands:
+    - 'give {player} diamond 3'
+  # vrp.admin permission
+  admin:
+    priority: 1
+    money: 1000
+    exp: 5
+    commands:
+    - 'give {player} diamond 5'
+

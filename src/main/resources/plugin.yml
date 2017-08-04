@@ -1,0 +1,18 @@
+name: ${project.artifactId}
+version: ${project.version}
+author: RaringM
+main: co.raring.voterewardsplus.Core
+depend: [Votifier]
+
+commands:
+    voterewardsplus:
+        description: Base command for VoteRewardsPlus
+        aliases: [vrp]
+        usage: /vrp <reload>
+permissions:
+    vrp.command:
+      description: Allow use for the command
+      default: op
+    vrp.vote_info:
+      description: Gives extra voting info, such as username, address, service name, and a timestamp.
+      default: false
